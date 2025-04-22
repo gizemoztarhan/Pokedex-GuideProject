@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+    @import "./header";
+    @import "./home";
+    
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    font-family: 'Sniglet', cursive;
+}
+body{
+    font-family: 'Sniglet', cursive;
+    // background-image: linear-gradient(to right, #f83600 0%, #f9d423 );
+    // background-color:#0F224A; 
+    background: linear-gradient(100deg, #163C77 5%, #ffd76c 100%);
+}
+
+.flexBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

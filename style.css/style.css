@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
+.pokedex {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.pokedex-heading {
+  margin: 40px auto;
+  color: #FFCB05;
+  text-shadow: -2px -2px 0 #3B4CCA, 2px -2px 0 #3B4CCA, -2px 2px 0 #3B4CCA, 2px 2px 0 #3B4CCA, 0 0px 8px white;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.pokedex-search {
+  position: relative;
+}
+.pokedex-search input {
+  font-size: 1rem;
+  font-family: "Sniglet", cursive;
+  padding: 15px;
+  border-radius: 10px;
+  height: 10px;
+  width: 15px;
+  transition: width 0.3s ease;
+  opacity: 0;
+}
+.pokedex-search input::-moz-placeholder {
+  color: #bbb;
+  opacity: 0.3;
+}
+.pokedex-search input::placeholder {
+  color: #bbb;
+  opacity: 0.3;
+}
+.pokedex-search button {
+  padding: 10px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.pokedex-search.active input {
+  width: 250px;
+  padding: 20px;
+  opacity: 1;
+}
+.pokedex-search.active button {
+  transform: translateX(100px);
+  padding: 5px;
+}
+
+.home {
+  text-align: center;
+  color: #fefefe;
+}
+.home .card-container {
+  flex-wrap: wrap;
+  max-width: 85%;
+  margin: 0 auto;
+}
+.home .card-box {
+  padding: 20px;
+  margin: 10px;
+  background-color: purple;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 10px;
+  transform: all 0.2 ease;
+}
+.home .card-box:hover {
+  transform: scale(1.02);
+}
+.home .card-box-image {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 75% 30% 60% 40%/60% 40% 60% 40%;
+}
+.home .card-box-image img {
+  width: 150px;
+  opacity: 0.75;
+  transform: all 0.3s ease-in-out;
+}
+.home .card-box-image img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.home .card-box .card-body {
+  margin-top: 10px;
+}
+.home .card-box .card-body-id {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+.home .card-box .card-body-name {
+  letter-spacing: 2px;
+  margin: 15px 0 10px;
+  text-transform: capitalize;
+}
+.home .card-box .card-body-info small {
+  padding: 0 5px;
+}
+.home .card-box .card-body-type {
+  margin-top: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  font-family: "Sniglet", cursive;
+}
+
+body {
+  font-family: "Sniglet", cursive;
+  background: linear-gradient(100deg, #163C77 5%, #ffd76c 100%);
+}
+
+.flexBox, .pokedex-search, .home .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
